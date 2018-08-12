@@ -1,0 +1,291 @@
+C:\TunningBRKGA\iraceBRKGA>irace.bat --scenario scenario.txt
+*******************************************************************************
+* irace: An implementation in R of Iterated Race
+* Version: 2.4.1844
+* Copyright (C) 2010-2017
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+* Jeremie Dubois-Lacoste
+* Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+*
+* This is free software, and you are welcome to redistribute it under certain
+* conditions.  See the GNU General Public License for details. There is NO
+* WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*
+* irace builds upon previous code from the race package:
+*
+* race: Racing methods for the selection of the best
+* Copyright (C) 2003 Mauro Birattari
+*******************************************************************************
+# installed at: C:/Users/DAISY/Documents/R/win-library/3.5/irace
+# called with: --scenario scenario.txt
+# 4 expression(s) specifying forbidden configurations read from 'C:/TunningBRKGA/iraceBRKGA/forbidden.txt'
+# Adding 1 initial configuration(s) from file "C:/TunningBRKGA/iraceBRKGA/configurations.txt"
+# 2018-06-13 21:05:32 BST: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 8
+# seed: 741763312
+# confidence level: 0.95
+# budget: 4000
+# mu: 5
+# deterministic: FALSE
+
+# 2018-06-13 21:05:32 BST: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# remainingBudget: 4000
+# currentBudget: 800
+# nbConfigurations: 133
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|        133|         12|    846.7690000|        133|00:49:12|   NA|  NA|    NA|
+|x|          2|        133|        116|    1382.090000|        266|00:50:32|+0.43|0.71|0.5901|
+|x|          3|        133|        116|    1558.286667|        399|00:44:19|+0.46|0.64|0.4555|
+|x|          4|        133|         51|    3079.297250|        532|00:43:10|+0.43|0.57|0.4238|
+|-|          5|         44|         51|    4855.417800|        665|00:24:24|-0.07|0.14|0.7983|
+|=|          6|         44|         51|    4054.012600|        709|00:20:56|-0.06|0.12|0.6625|
+|=|          7|         44|        131|    3547.719800|        753|00:44:40|-0.05|0.10|0.7212|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         131    mean value:     3547.719800
+Description of the best configuration:
+    .ID.  p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL .PARENT.
+131  131 75 0.2929 0.3413 0.5481 2     2959        3     241       NA
+
+# 2018-06-14 01:42:50 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+     p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+131 75 0.2929 0.3413 0.5481 2     2959        3     241
+13  94 0.1949 0.2365 0.7405 4     2424        4     294
+85  65 0.2013 0.5449 0.9235 1     2199        3      62
+116 96 0.5025 0.2790 0.3583 2     1629        3     127
+26  69 0.2661 0.4197 0.6669 3     2929        2      50
+# 2018-06-14 01:42:50 BST: Iteration 2 of 5
+# experimentsUsedSoFar: 753
+# remainingBudget: 3247
+# currentBudget: 811
+# nbConfigurations: 105
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|        105|         85|    533.5320000|        105|01:00:11|   NA|  NA|    NA|
+|x|          5|        105|         85|    6246.716000|        205|00:30:01|+0.11|0.56|0.8181|
+|x|          7|        105|         85|    4330.928000|        305|01:47:10|+0.23|0.49|0.7357|
+|x|          6|        105|         85|    3259.942650|        405|00:50:26|+0.22|0.41|0.7061|
+|!|          4|         52|        156|    4124.937320|        505|00:46:43|-0.11|0.11|0.4276|
+|=|          2|         52|        156|    3755.572767|        552|00:34:52|-0.07|0.11|0.5220|
+|=|          1|         52|        156|    3342.670657|        599|00:25:14|-0.04|0.11|0.5858|
+|=|          3|         52|         85|    3169.099825|        646|00:27:34|+0.02|0.14|0.6160|
+|=|          9|         52|        141|    2844.613178|        698|00:25:39|+0.02|0.13|0.6505|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         141    mean value:     2844.613178
+Description of the best configuration:
+    .ID.  p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL .PARENT.
+141  141 91 0.1878 0.1004 0.5322 3     2194        2     288       13
+
+# 2018-06-14 08:30:45 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+     p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+141 91 0.1878 0.1004 0.5322 3     2194        2     288
+193 91 0.1702 0.3006 0.5366 3     2178        3      50
+85  65 0.2013 0.5449 0.9235 1     2199        3      62
+156 62 0.1864 0.3952 0.7143 2     1407        2     122
+116 96 0.5025 0.2790 0.3583 2     1629        3     127
+# 2018-06-14 08:30:45 BST: Iteration 3 of 5
+# experimentsUsedSoFar: 1451
+# remainingBudget: 2549
+# currentBudget: 849
+# nbConfigurations: 89
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         10|         89|        141|    1045.000000|         89|00:31:12|   NA|  NA|    NA|
+|x|          6|         89|        141|    545.9933000|        173|00:57:33|+0.00|0.50|0.4944|
+|x|          1|         89|        253|    646.2518667|        257|00:53:29|+0.05|0.37|0.6025|
+|x|          2|         89|        283|    944.6414000|        341|01:07:26|+0.16|0.37|0.6259|
+|-|          8|         35|        276|    876.2075200|        425|01:01:22|-0.06|0.15|0.5884|
+|=|          9|         35|        283|    763.0286000|        455|00:22:28|-0.03|0.15|0.6386|
+|=|          4|         35|        283|    1715.578800|        485|00:25:45|+0.00|0.15|0.6548|
+|=|          5|         35|        283|    2996.118950|        515|00:16:20|+0.00|0.13|0.5779|
+|=|          7|         35|        283|    2718.700400|        545|01:07:35|+0.00|0.11|0.5169|
+|=|          3|         35|        276|    2654.851960|        575|00:26:39|+0.03|0.13|0.5515|
+|=|         11|         35|        276|    2474.533691|        610|00:25:35|+0.04|0.13|0.5865|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         276    mean value:     2474.533691
+Description of the best configuration:
+    .ID.  p     pe    pm   rhoe K MAX_GENS X_NUMBER X_INTVL .PARENT.
+276  276 84 0.2264 0.352 0.3168 4     2997        2      30      193
+
+# 2018-06-14 16:06:15 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+     p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+276 84 0.2264 0.3520 0.3168 4     2997        2      30
+283 96 0.2268 0.3266 0.3737 3     2267        4      32
+311 94 0.0860 0.4681 0.3872 3     2537        2     268
+141 91 0.1878 0.1004 0.5322 3     2194        2     288
+296 74 0.2322 0.2881 0.3347 3     2070        2     290
+# 2018-06-14 16:06:15 BST: Iteration 4 of 5
+# experimentsUsedSoFar: 2061
+# remainingBudget: 1939
+# currentBudget: 969
+# nbConfigurations: 85
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         12|         85|        276|    370.9030000|         85|01:34:57|   NA|  NA|    NA|
+|x|          5|         85|        276|    6165.401500|        165|00:59:05|+1.00|1.00|0.0000|
+|x|          1|         85|        276|    4392.524000|        245|01:32:12|+0.00|0.33|0.3294|
+|x|          4|         85|        283|    5152.113000|        325|01:33:10|+0.01|0.25|0.4790|
+|=|          6|         85|        283|    4131.087720|        405|01:39:50|+0.00|0.20|0.3863|
+|=|          3|         85|        276|    3790.584767|        485|01:41:06|+0.01|0.18|0.4808|
+|=|          9|         85|        331|    3265.686514|        565|01:20:13|+0.01|0.15|0.5514|
+|=|          8|         85|        276|    2933.290075|        645|01:52:24|+0.02|0.14|0.6041|
+|=|          2|         85|        276|    2819.452289|        725|02:06:02|+0.02|0.13|0.6463|
+|=|         10|         85|        276|    2642.007060|        805|00:51:19|+0.02|0.12|0.5829|
+|=|         11|         85|        331|    2462.573691|        885|01:30:17|+0.03|0.11|0.6160|
+|-|          7|         58|        331|    2298.971883|        965|03:22:00|-0.05|0.04|0.5960|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         331    mean value:     2298.971883
+Description of the best configuration:
+    .ID.  p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL .PARENT.
+331  331 84 0.1714 0.2281 0.4196 4     2895        2      33      276
+
+# 2018-06-15 12:08:55 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+      p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+331  84 0.1714 0.2281 0.4196 4     2895        2      33
+364  94 0.2430 0.3430 0.3611 4     2233        2      51
+276  84 0.2264 0.3520 0.3168 4     2997        2      30
+335  77 0.1090 0.2684 0.2186 4     2954        2      45
+322 100 0.2792 0.2931 0.4284 3     2298        4      47
+# 2018-06-15 12:08:55 BST: Iteration 5 of 5
+# experimentsUsedSoFar: 3026
+# remainingBudget: 974
+# currentBudget: 974
+# nbConfigurations: 79
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         13|         79|        423|    634.0000000|         79|05:07:51|   NA|  NA|    NA|
+|x|         12|         79|        423|    502.4515000|        153|01:41:40|+0.00|0.50|0.4937|
+|x|          2|         79|        423|    967.1176667|        227|02:22:28|+0.16|0.44|0.5632|
+|x|          7|         79|        423|    850.1762500|        301|04:06:52|+0.10|0.33|0.4461|
+|=|          4|         79|        322|    2193.229000|        375|01:48:47|+0.06|0.25|0.5676|
+|=|         11|         79|        322|    1938.377000|        449|01:44:00|+0.06|0.21|0.6348|
+|-|          9|         31|        322|    1687.762571|        523|01:33:18|-0.04|0.10|0.7168|
+|=|          1|         31|        331|    1583.359500|        549|00:40:47|-0.03|0.10|0.7513|
+|=|          3|         31|        331|    1617.916222|        575|00:43:10|-0.02|0.09|0.7658|
+|=|         10|         31|        331|    1560.624600|        601|00:22:13|-0.02|0.08|0.6879|
+|=|          5|         31|        331|    2506.013273|        627|00:25:35|-0.02|0.08|0.6244|
+|=|          8|         31|        331|    2348.473000|        653|00:49:36|-0.02|0.06|0.6548|
+|=|          6|         31|        331|    2171.435585|        679|00:45:53|-0.02|0.06|0.6037|
+|=|         14|         31|        331|    2038.047329|        710|01:29:18|-0.02|0.05|0.6369|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         331    mean value:     2038.047329
+Description of the best configuration:
+    .ID.  p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL .PARENT.
+331  331 84 0.1714 0.2281 0.4196 4     2895        2      33      276
+
+# 2018-06-16 11:50:32 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+      p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+331  84 0.1714 0.2281 0.4196 4     2895        2      33
+442  87 0.2497 0.1856 0.4032 4     2889        2      32
+448  78 0.1625 0.2631 0.3122 4     2982        2      40
+322 100 0.2792 0.2931 0.4284 3     2298        4      47
+364  94 0.2430 0.3430 0.3611 4     2233        2      51
+# 2018-06-16 11:50:32 BST: Iteration 6 of 6
+# experimentsUsedSoFar: 3736
+# remainingBudget: 264
+# currentBudget: 264
+# nbConfigurations: 22
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         15|         22|        331|    50.25640000|         22|00:15:07|   NA|  NA|    NA|
+|x|          8|         22|        448|    291.8942000|         39|00:35:33|+0.00|0.50|0.4773|
+|x|         12|         22|        448|    318.2304667|         56|00:25:44|+0.00|0.33|0.3182|
+|x|         14|         22|        482|    314.1728500|         73|00:49:51|+0.16|0.37|0.4171|
+|=|          3|         22|        478|    630.4122800|         90|00:28:06|+0.06|0.25|0.5524|
+|=|          6|         22|        478|    533.1746667|        107|00:29:21|+0.05|0.20|0.4637|
+|=|          7|         22|        478|    528.3428571|        124|01:09:00|+0.04|0.18|0.3994|
+|=|         10|         22|        478|    592.9250000|        141|00:14:58|+0.03|0.15|0.3507|
+|=|          9|         22|        478|    547.4973333|        158|00:23:21|+0.03|0.14|0.4177|
+|=|          2|         22|        478|    684.5046000|        175|00:35:08|+0.06|0.15|0.4615|
+|-|         11|         17|        364|    677.2420909|        192|00:24:42|-0.01|0.08|0.5174|
+|=|         13|         17|        448|    677.5545833|        204|00:57:56|+0.00|0.09|0.5393|
+|=|          1|         17|        479|    694.3333077|        216|00:20:23|+0.00|0.08|0.5727|
+|=|          4|         17|        479|    1189.563071|        228|00:19:48|+0.00|0.07|0.5989|
+|=|          5|         17|        479|    1907.585533|        240|00:12:43|+0.00|0.07|0.5594|
+|=|         16|         17|        448|    1858.147688|        257|00:12:59|+0.00|0.07|0.5809|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         448    mean value:     1858.147688
+Description of the best configuration:
+    .ID.  p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL .PARENT.
+448  448 78 0.1625 0.2631 0.3122 4     2982        2      40      276
+
+# 2018-06-16 19:45:20 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+     p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+448 78 0.1625 0.2631 0.3122 4     2982        2      40
+479 77 0.1458 0.3402 0.3317 4     2987        2      46
+331 84 0.1714 0.2281 0.4196 4     2895        2      33
+442 87 0.2497 0.1856 0.4032 4     2889        2      32
+476 87 0.1318 0.2655 0.3220 4     2906        2      37
+# 2018-06-16 19:45:20 BST: Stopped because there is not enough budget left to race more than the minimum (5)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 7
+# nbIterations: 7
+# experimentsUsedSoFar: 3993
+# timeUsed: 0
+# remainingBudget: 7
+# currentBudget: 7
+# number of elites: 5
+# nbConfigurations: 5
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+     p     pe     pm   rhoe K MAX_GENS X_NUMBER X_INTVL
+448 78 0.1625 0.2631 0.3122 4     2982        2      40
+479 77 0.1458 0.3402 0.3317 4     2987        2      46
+331 84 0.1714 0.2281 0.4196 4     2895        2      33
+442 87 0.2497 0.1856 0.4032 4     2889        2      32
+476 87 0.1318 0.2655 0.3220 4     2906        2      37
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+448  78 0.1625 0.2631 0.3122 4 2982 2 40
+479  77 0.1458 0.3402 0.3317 4 2987 2 46
+331  84 0.1714 0.2281 0.4196 4 2895 2 33
+442  87 0.2497 0.1856 0.4032 4 2889 2 32
+476  87 0.1318 0.2655 0.322 4 2906 2 37
+
+C:\TunningBRKGA\iraceBRKGA>

@@ -1,0 +1,228 @@
+*******************************************************************************
+* irace: An implementation in R of Iterated Race
+* Version: 2.4.1844
+* Copyright (C) 2010-2017
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+* Jeremie Dubois-Lacoste
+* Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+*
+* This is free software, and you are welcome to redistribute it under certain
+* conditions.  See the GNU General Public License for details. There is NO
+* WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*
+* irace builds upon previous code from the race package:
+*
+* race: Racing methods for the selection of the best
+* Copyright (C) 2003 Mauro Birattari
+*******************************************************************************
+# installed at: C:/Users/DAISY/Documents/R/win-library/3.5/irace
+# called with: --scenario scenario.txt
+# Adding 1 initial configuration(s) from file "C:/TunningBRKGA/iracePazour/configurations.txt"
+# 2018-06-11 22:52:50 BST: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 2
+# minNbSurvival: 2
+# nbParameters: 1
+# seed: 1277003370
+# confidence level: 0.95
+# budget: 5000
+# mu: 5
+# deterministic: TRUE
+
+# 2018-06-11 22:52:50 BST: Iteration 1 of 2
+# experimentsUsedSoFar: 0
+# remainingBudget: 5000
+# currentBudget: 2500
+# nbConfigurations: 416
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|        416|          1|    473.9130000|        416|00:02:12|   NA|  NA|    NA|
+|x|          2|        416|         14|    2050.836500|        832|00:02:31|-0.31|0.35|1.3227|
+|x|          3|        416|         69|    2904.407667|       1248|00:06:43|-0.05|0.30|1.0427|
+|x|          4|        416|         69|    2257.743000|       1664|00:02:09|-0.04|0.22|0.7707|
+|=|          5|        416|         69|    1893.705800|       2080|00:02:10|-0.03|0.18|0.6121|
+|=|          6|        416|         69|    3101.843167|       2496|00:02:27|-0.02|0.15|0.5078|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:          69    mean value:     3101.843167
+Description of the best configuration:
+   .ID.     tau .PARENT.
+69   69 22.2069       NA
+
+# 2018-06-11 23:11:05 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+        tau
+69  22.2069
+175 22.1965
+# 2018-06-11 23:11:05 BST: Iteration 2 of 2
+# experimentsUsedSoFar: 2496
+# remainingBudget: 2504
+# currentBudget: 2504
+# nbConfigurations: 359
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          7|        359|         69|    188.1900000|        359|00:01:51|   NA|  NA|    NA|
+|x|          3|        359|         69|    2372.555000|        716|00:05:46|+0.00|0.50|0.4986|
+|x|          5|        359|         69|    1727.555667|       1073|00:01:53|+0.00|0.33|0.3324|
+|x|          4|        359|         69|    1375.104000|       1430|00:01:54|+0.00|0.25|0.2493|
+|=|          2|        359|         69|    1836.561200|       1787|00:02:05|-0.01|0.19|0.4056|
+|=|          1|        359|         69|    1609.453167|       2144|00:01:56|-0.01|0.16|0.3369|
+|=|          6|        359|         69|    2685.607000|       2501|00:02:08|-0.01|0.14|0.2881|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:          69    mean value:     2685.607000
+Description of the best configuration:
+   .ID.     tau .PARENT.
+69   69 22.2069       NA
+
+# 2018-06-11 23:28:44 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+        tau
+69  22.2069
+175 22.1965
+# 2018-06-11 23:28:44 BST: Stopped because there is not enough budget left to race more than the minimum (2)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 3
+# nbIterations: 3
+# experimentsUsedSoFar: 4997
+# timeUsed: 0
+# remainingBudget: 3
+# currentBudget: 3
+# number of elites: 2
+# nbConfigurations: 2
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+        tau
+69  22.2069
+175 22.1965
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+69   22.2069
+175  22.1965
+
+C:\TunningBRKGA\iracePazour>irace.bat --scenario scenario.txt
+*******************************************************************************
+* irace: An implementation in R of Iterated Race
+* Version: 2.4.1844
+* Copyright (C) 2010-2017
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+* Jeremie Dubois-Lacoste
+* Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+*
+* This is free software, and you are welcome to redistribute it under certain
+* conditions.  See the GNU General Public License for details. There is NO
+* WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*
+* irace builds upon previous code from the race package:
+*
+* race: Racing methods for the selection of the best
+* Copyright (C) 2003 Mauro Birattari
+*******************************************************************************
+# installed at: C:/Users/DAISY/Documents/R/win-library/3.5/irace
+# called with: --scenario scenario.txt
+# Adding 1 initial configuration(s) from file "C:/TunningBRKGA/iracePazour/configurations.txt"
+# 2018-06-12 12:33:19 BST: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 2
+# minNbSurvival: 2
+# nbParameters: 1
+# seed: 440456806
+# confidence level: 0.95
+# budget: 15000
+# mu: 5
+# deterministic: TRUE
+
+# 2018-06-12 12:33:19 BST: Iteration 1 of 2
+# experimentsUsedSoFar: 0
+# remainingBudget: 15000
+# currentBudget: 7500
+# nbConfigurations: 1024
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|       1024|          1|    420.2720000|       1024|00:06:17|   NA|  NA|    NA|
+|x|          2|       1024|          1|    918.9760000|       2048|00:15:55|+1.00|1.00|0.0000|
+|x|          3|       1024|          1|    41050.98400|       3072|00:17:01|+1.00|1.00|0.0000|
+|x|          4|       1024|          1|    30795.38798|       4096|00:05:05|+1.00|1.00|0.0000|
+|=|          5|       1024|          1|    25301.30638|       5120|00:06:25|+1.00|1.00|0.0000|
+|=|          6|       1024|          1|    21134.38132|       6144|00:06:11|+1.00|1.00|0.0000|
+|=|          7|       1024|          1|    18932.32684|       7168|00:11:10|+1.00|1.00|0.0000|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:           1    mean value:     18932.32684
+Description of the best configuration:
+  .ID. tau .PARENT.
+1    1  22       NA
+
+# 2018-06-12 13:41:26 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+      tau
+1 22.0000
+2 13.6267
+# 2018-06-12 13:41:26 BST: Iteration 2 of 2
+# experimentsUsedSoFar: 7168
+# remainingBudget: 7832
+# currentBudget: 7832
+# nbConfigurations: 980
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|        980|          1|    19.00000000|        980|00:04:16|   NA|  NA|    NA|
+|x|          1|        980|          1|    219.6360000|       1958|00:05:52|+1.00|1.00|0.0000|
+|x|          3|        980|          1|    40584.75733|       2936|00:15:32|+1.00|1.00|0.0000|
+|x|          7|        980|          1|    31868.56800|       3914|00:09:54|+1.00|1.00|0.0000|
+|=|          6|        980|          1|    25554.80560|       4892|00:05:11|+1.00|1.00|0.0000|
+|=|          5|        980|          1|    21849.83467|       5870|00:05:56|+1.00|1.00|0.0000|
+|=|          2|        980|          1|    18930.95543|       6848|00:15:02|+1.00|1.00|0.0000|
+|=|          4|        980|          1|    16568.16099|       7826|00:04:20|+1.00|1.00|0.0000|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:           1    mean value:     16568.16099
+Description of the best configuration:
+  .ID. tau .PARENT.
+1    1  22       NA
+
+# 2018-06-12 14:47:39 BST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+      tau
+1 22.0000
+2 13.6267
+# 2018-06-12 14:47:40 BST: Stopped because there is not enough budget left to race more than the minimum (2)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 3
+# nbIterations: 3
+# experimentsUsedSoFar: 14994
+# timeUsed: 0
+# remainingBudget: 6
+# currentBudget: 6
+# number of elites: 2
+# nbConfigurations: 2
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+      tau
+1 22.0000
+2 13.6267
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+1  22
+2  13.6267
+
+C:\TunningBRKGA\iracePazour>
